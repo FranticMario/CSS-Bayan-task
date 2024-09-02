@@ -74,7 +74,6 @@ body {
 
 .accardeon__input:hover ~ .accardeon__title::after {
     transform: translateY(-50%) rotate(135deg);
-
 }
 
 
@@ -91,7 +90,16 @@ body {
     display: none;
     height: 640px;
     padding: 10px 15px;
+    animation: 0.4s show ease;
+    transition: 0.3s all;
+    cursor: pointer;
 }
+
+
+@keyframes show {
+    from { scale: 0; }
+    to { scale: 1; }
+  }
 
 .img__content {
     width: 100%;
